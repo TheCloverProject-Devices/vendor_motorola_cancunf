@@ -524,58 +524,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "motorola.hardware.camera.imgtuner@2.0-impl",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/motorola.hardware.camera.imgtuner@2.0-impl.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbinder",
-                "libhidlbase",
-                "libhidlmemory",
-                "libutils",
-                "libziparchive",
-                "motorola.hardware.camera.imgtuner@1.0",
-                "motorola.hardware.camera.imgtuner@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/motorola.hardware.camera.imgtuner@2.0-impl.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbinder",
-                "libhidlbase",
-                "libhidlmemory",
-                "libutils",
-                "libziparchive",
-                "motorola.hardware.camera.imgtuner@1.0",
-                "motorola.hardware.camera.imgtuner@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "android.hardware.graphics.mapper@4.0-impl-mediatek",
     owner: "motorola",
     strip: {
@@ -24720,47 +24668,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libadropbox",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libadropbox.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libadropbox.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libaedv",
     owner: "motorola",
     strip: {
@@ -29011,94 +28918,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "motorola.hardware.camera.imgtuner@1.0",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/motorola.hardware.camera.imgtuner@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/motorola.hardware.camera.imgtuner@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "motorola.hardware.camera.imgtuner@2.0",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/motorola.hardware.camera.imgtuner@2.0.so",
-            ],
-            shared_libs: [
-                "motorola.hardware.camera.imgtuner@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/motorola.hardware.camera.imgtuner@2.0.so",
-            ],
-            shared_libs: [
-                "motorola.hardware.camera.imgtuner@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "lib3a.ae.core",
     owner: "motorola",
     strip: {
@@ -30483,20 +30302,20 @@ cc_prebuilt_library_shared {
                 "libcam.hal3a.log",
                 "libmtkcam_stdutils",
                 "libcameracustom.lens",
-                "mot_cancunf_ov50d_mipi_raw_row_IdxMgr",
                 "mot_cancunf_ov50d_mipi_raw_IdxMgr",
-                "mot_cancunf_s5kjns_mipi_raw_IdxMgr",
+                "mot_cancunf_ov50d_mipi_raw_row_IdxMgr",
                 "mot_cancunf_s5kjns_mipi_raw_row_IdxMgr",
+                "mot_cancunf_s5kjns_mipi_raw_IdxMgr",
                 "mot_cancunf_jns_yova_mipi_raw_IdxMgr",
                 "mot_cancunf_jns_yova_mipi_raw_row_IdxMgr",
-                "mot_cancunf_hi1634q_mipi_raw_IdxMgr",
                 "mot_cancunf_hi1634q_mipi_raw_row_IdxMgr",
+                "mot_cancunf_hi1634q_mipi_raw_IdxMgr",
                 "mot_cancunf_s5k3p9sp04_mipi_raw_IdxMgr",
                 "mot_cancunf_s5k3p9sp04_mipi_raw_row_IdxMgr",
-                "mot_cancunf_s5k4h7_mipi_raw_row_IdxMgr",
                 "mot_cancunf_s5k4h7_mipi_raw_IdxMgr",
-                "mot_cancunf_sc202_mipi_raw_IdxMgr",
+                "mot_cancunf_s5k4h7_mipi_raw_row_IdxMgr",
                 "mot_cancunf_sc202_mipi_raw_row_IdxMgr",
+                "mot_cancunf_sc202_mipi_raw_IdxMgr",
                 "libmtkcam_modulehelper",
                 "mtk000_mipi_raw_IdxMgr",
                 "libc++",
@@ -30520,20 +30339,20 @@ cc_prebuilt_library_shared {
                 "libcam.hal3a.log",
                 "libmtkcam_stdutils",
                 "libcameracustom.lens",
-                "mot_cancunf_ov50d_mipi_raw_row_IdxMgr",
                 "mot_cancunf_ov50d_mipi_raw_IdxMgr",
-                "mot_cancunf_s5kjns_mipi_raw_IdxMgr",
+                "mot_cancunf_ov50d_mipi_raw_row_IdxMgr",
                 "mot_cancunf_s5kjns_mipi_raw_row_IdxMgr",
+                "mot_cancunf_s5kjns_mipi_raw_IdxMgr",
                 "mot_cancunf_jns_yova_mipi_raw_IdxMgr",
                 "mot_cancunf_jns_yova_mipi_raw_row_IdxMgr",
-                "mot_cancunf_hi1634q_mipi_raw_IdxMgr",
                 "mot_cancunf_hi1634q_mipi_raw_row_IdxMgr",
+                "mot_cancunf_hi1634q_mipi_raw_IdxMgr",
                 "mot_cancunf_s5k3p9sp04_mipi_raw_IdxMgr",
                 "mot_cancunf_s5k3p9sp04_mipi_raw_row_IdxMgr",
-                "mot_cancunf_s5k4h7_mipi_raw_row_IdxMgr",
                 "mot_cancunf_s5k4h7_mipi_raw_IdxMgr",
-                "mot_cancunf_sc202_mipi_raw_IdxMgr",
+                "mot_cancunf_s5k4h7_mipi_raw_row_IdxMgr",
                 "mot_cancunf_sc202_mipi_raw_row_IdxMgr",
+                "mot_cancunf_sc202_mipi_raw_IdxMgr",
                 "libmtkcam_modulehelper",
                 "mtk000_mipi_raw_IdxMgr",
                 "libc++",
@@ -36169,8 +35988,10 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libh264dec_customize.so",
             ],
             shared_libs: [
+                "libc++",
                 "libc",
                 "libm",
+                "libdl",
             ],
         },
     },
@@ -36192,12 +36013,14 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libcutils",
-                "libvcodec_utility",
                 "libvcodec_oal",
                 "libh264dec_customize",
                 "liblog",
+                "libthha",
+                "libc++",
                 "libc",
                 "libm",
+                "libdl",
             ],
         },
     },
@@ -36220,14 +36043,14 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libcutils",
-                "libvcodec_utility",
                 "libvcodec_oal",
                 "libh264dec_customize",
                 "liblog",
-                "libpowerhalwrap_vendor",
                 "libthha",
+                "libc++",
                 "libc",
                 "libm",
+                "libdl",
             ],
         },
     },
@@ -36250,43 +36073,14 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libcutils",
-                "libvcodec_utility",
                 "libvcodec_oal",
                 "libh264dec_customize",
                 "liblog",
-                "libpowerhalwrap_vendor",
                 "libthha",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libh264enc_sa.ca7",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libh264enc_sa.ca7.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libvcodec_oal",
                 "libc++",
-                "libdl",
                 "libc",
                 "libm",
+                "libdl",
             ],
         },
     },
@@ -36338,35 +36132,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "liblog",
-                "libvcodec_oal",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmp4enc_xa.ca7",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmp4enc_xa.ca7.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libvcodec_utility",
                 "libvcodec_oal",
                 "libc++",
                 "libdl",
@@ -37997,30 +37762,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libArcNetMtk",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libArcNetMtk.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libBSTSWAD",
     owner: "motorola",
     strip: {
@@ -38243,6 +37984,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libadropbox",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libadropbox.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libalsautils-v31",
     owner: "motorola",
     strip: {
@@ -38372,7 +38140,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libarcsoft_super_night_raw",
+    name: "libarcsoft_portrait_super_night_se_raw_lite",
     owner: "motorola",
     strip: {
         none: true,
@@ -38380,36 +38148,11 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libarcsoft_super_night_raw.so",
+                "proprietary/vendor/lib64/libarcsoft_portrait_super_night_se_raw_lite.so",
             ],
             shared_libs: [
                 "libmpbase",
                 "libOpenCL",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarcsoft_super_night_raw_bin",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libarcsoft_super_night_raw_bin.so",
-            ],
-            shared_libs: [
-                "libmpbase",
                 "liblog",
                 "libc",
                 "libm",
@@ -38432,6 +38175,32 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libarcsoft_super_night_se_raw.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "libOpenCL",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_super_night_se_raw_lite",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarcsoft_super_night_se_raw_lite.so",
             ],
             shared_libs: [
                 "libmpbase",
@@ -40501,15 +40270,11 @@ cc_prebuilt_library_shared {
                 "libmtkcam_metastore",
                 "libcam.iopipe",
                 "libmtkcam_ulog",
-                "libmpbase",
                 "libcameracustom",
-                "libarcsoft_portrait_super_night_se_raw",
-                "libarcsoft_super_night_raw",
-                "libarcsoft_super_night_se_raw",
-                "libarcsoft_super_night_raw_bin",
+                "libmtkcam_sysutils",
+                "libmpbase",
                 "libcamalgo.fdft",
                 "libmtkcam_hwutils",
-                "libArcNetMtk",
                 "libmtkcam_cpuctrl_customer",
                 "libc++",
                 "libc",
@@ -41915,6 +41680,31 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     relative_install_path: "mediadrm",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "motorola.hardware.camera.imgtuner.aidl-V1-ndk_platform",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/motorola.hardware.camera.imgtuner.aidl-V1-ndk_platform.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -49186,7 +48976,6 @@ android_app_import {
         enabled: false,
     },
     privileged: true,
-    skip_preprocessed_apk_checks: true,
     product_specific: true,
 }
 
@@ -49399,6 +49188,15 @@ prebuilt_etc_xml {
     name: "memtrack-mediatek.xml",
     owner: "motorola",
     src: "proprietary/vendor/etc/vintf/manifest/memtrack-mediatek.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "motorola.hardware.camera.imgtuner.aidl.xml",
+    owner: "motorola",
+    src: "proprietary/vendor/etc/vintf/manifest/motorola.hardware.camera.imgtuner.aidl.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -50241,22 +50039,21 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "motorola.hardware.camera.imgtuner@2.0-service",
+    name: "motorola.hardware.camera.imgtuner.aidl-service",
     owner: "motorola",
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/bin/hw/motorola.hardware.camera.imgtuner@2.0-service",
+                "proprietary/vendor/bin/hw/motorola.hardware.camera.imgtuner.aidl-service",
             ],
             shared_libs: [
                 "libbase",
-                "libbinder",
+                "libbinder_ndk",
                 "liblog",
                 "libutils",
                 "libcutils",
-                "libhidlbase",
-                "motorola.hardware.camera.imgtuner@1.0",
-                "motorola.hardware.camera.imgtuner@2.0",
+                "libziparchive",
+                "motorola.hardware.camera.imgtuner.aidl-V1-ndk_platform",
                 "libc++",
                 "libc",
                 "libm",

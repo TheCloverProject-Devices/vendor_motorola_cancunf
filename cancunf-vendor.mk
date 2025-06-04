@@ -56,8 +56,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/VideoLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/ap_gain.bin:$(TARGET_COPY_OUT_VENDOR)/etc/ap_gain.bin \
     vendor/motorola/cancunf/proprietary/vendor/etc/ap_gain_mmul.bin:$(TARGET_COPY_OUT_VENDOR)/etc/ap_gain_mmul.bin \
-    vendor/motorola/cancunf/proprietary/vendor/etc/apdb/APDB_MT6855___W2401:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6855___W2401 \
-    vendor/motorola/cancunf/proprietary/vendor/etc/apdb/APDB_MT6855___W2401_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6855___W2401_ENUM \
+    vendor/motorola/cancunf/proprietary/vendor/etc/apdb/APDB_MT6855___W2425:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6855___W2425 \
+    vendor/motorola/cancunf/proprietary/vendor/etc/apdb/APDB_MT6855___W2425_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6855___W2425_ENUM \
     vendor/motorola/cancunf/proprietary/vendor/etc/aualgo/aualgo_comp_azpp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/aualgo/aualgo_comp_azpp.conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/aualgo/aualgo_sst.conf:$(TARGET_COPY_OUT_VENDOR)/etc/aualgo/aualgo_sst.conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/audio_param/AudioParamOptions_mgvi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_mgvi.xml \
@@ -261,7 +261,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/lbs_hidl_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lbs_hidl_service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/memtrack-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack-mediatek.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/motorola.hardware.camera.imgtuner@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.imgtuner@2.0-service.rc \
+    vendor/motorola/cancunf/proprietary/vendor/etc/init/motorola.hardware.camera.imgtuner.aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.imgtuner.aidl-service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
@@ -365,9 +365,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/firmware/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \
     vendor/motorola/cancunf/proprietary/vendor/firmware/valhall-1691526.wa:$(TARGET_COPY_OUT_VENDOR)/firmware/valhall-1691526.wa \
     vendor/motorola/cancunf/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
-    vendor/motorola/cancunf/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
-    vendor/motorola/cancunf/proprietary/vendor/lib64/arcsoft_portrait_super_night_se_raw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/arcsoft_portrait_super_night_se_raw.bin \
-    vendor/motorola/cancunf/proprietary/vendor/lib64/super_night_raw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/super_night_raw.bin
+    vendor/motorola/cancunf/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg
 
 PRODUCT_PACKAGES += \
     AVCSecureVdecCA \
@@ -381,7 +379,6 @@ PRODUCT_PACKAGES += \
     libEGL_mtk \
     libGLESv1_CM_mtk \
     libGLESv2_mtk \
-    motorola.hardware.camera.imgtuner@2.0-impl \
     android.hardware.graphics.mapper@4.0-impl-mediatek \
     gralloc.rogue \
     vendor.mediatek.hardware.camera.atms@1.0-impl \
@@ -1062,7 +1059,6 @@ PRODUCT_PACKAGES += \
     libSQLiteModule_VER_ALL \
     lib_ainr_enh \
     libaal_key \
-    libadropbox \
     libaedv \
     libappgamepq \
     libapu_mdw \
@@ -1162,8 +1158,6 @@ PRODUCT_PACKAGES += \
     libvcodecdrv_header_stub \
     libvpu5 \
     meta_wifi_data \
-    motorola.hardware.camera.imgtuner@1.0 \
-    motorola.hardware.camera.imgtuner@2.0 \
     lib3a.ae.core \
     lib3a.ae \
     lib3a.awb.core \
@@ -1299,10 +1293,8 @@ PRODUCT_PACKAGES += \
     libh264dec_sa.ca7 \
     libh264dec_sd.ca7 \
     libh264dec_se.ca7 \
-    libh264enc_sa.ca7 \
     libmp3dec_mtk \
     libmp4enc_sa.ca7 \
-    libmp4enc_xa.ca7 \
     librcs_interface \
     librcs_volte_core \
     libvcodec_utility_plat.mt6789 \
@@ -1351,7 +1343,6 @@ PRODUCT_PACKAGES += \
     jcos_client \
     lbs_hidl_service-impl \
     lib3a.ae.pipe \
-    libArcNetMtk \
     libBSTSWAD \
     libBSTbase_share \
     libBasicModule \
@@ -1361,14 +1352,15 @@ PRODUCT_PACKAGES += \
     libTEECommon \
     libVkLayer_mtk_rt_sdk \
     lib_iir \
+    libadropbox \
     libalsautils-v31 \
     libarcsoft_hdr_detection \
     libarcsoft_high_dynamic_range_v2 \
     libarcsoft_portrait_distortion_correction \
     libarcsoft_portrait_super_night_se_raw \
-    libarcsoft_super_night_raw \
-    libarcsoft_super_night_raw_bin \
+    libarcsoft_portrait_super_night_se_raw_lite \
     libarcsoft_super_night_se_raw \
+    libarcsoft_super_night_se_raw_lite \
     libaualgo_azp_component \
     libaualgo_azp_wrapper \
     libaualgo_foundation \
@@ -1490,6 +1482,7 @@ PRODUCT_PACKAGES += \
     ls_nq_client \
     libmockdrmcryptoplugin \
     libwvdrmengine \
+    motorola.hardware.camera.imgtuner.aidl-V1-ndk_platform \
     motrilutils \
     lib3a.ae.stat \
     lib3a.af.assist \
@@ -1727,6 +1720,7 @@ PRODUCT_PACKAGES += \
     manifest_hwcomposer.xml \
     manifest_media_c2_V1_2_default.xml \
     memtrack-mediatek.xml \
+    motorola.hardware.camera.imgtuner.aidl.xml \
     SN1X0__RF-On.txt \
     autobt \
     bip_ap \
@@ -1755,7 +1749,7 @@ PRODUCT_PACKAGES += \
     chipone_ident \
     fpc_ident \
     goodix_ident \
-    motorola.hardware.camera.imgtuner@2.0-service \
+    motorola.hardware.camera.imgtuner.aidl-service \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6855 \
     camerahalserver \
     mtkfusionrild \

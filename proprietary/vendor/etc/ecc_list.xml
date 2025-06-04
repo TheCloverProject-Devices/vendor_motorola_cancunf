@@ -588,6 +588,28 @@
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn = "246 01" />
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn = "246 01" />
 
+    <!-- Add for Telia Latvia operator -->
+    <EccEntry Ecc="110" Category="1" Condition="0" Plmn = "247 01" />
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn = "247 01" />
+    <EccEntry Ecc="113" Category="2" Condition="0" Plmn = "247 01" />
+    <EccEntry Ecc="115" Category="8" Condition="0" Plmn = "247 01" />
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn = "247 01" />
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn = "247 01" />
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn = "247 01" />
+    <EccEntry Ecc="113" Category="2" Condition="1" Plmn = "247 01" />
+    <EccEntry Ecc="115" Category="8" Condition="1" Plmn = "247 01" />
+    <EccEntry Ecc="911" Category="0" Condition="1" Plmn = "247 01" />
+    <EccEntry Ecc="110" Category="1" Condition="0" Plmn = "247 10" />
+    <EccEntry Ecc="112" Category="0" Condition="0" Plmn = "247 10" />
+    <EccEntry Ecc="113" Category="2" Condition="0" Plmn = "247 10" />
+    <EccEntry Ecc="115" Category="8" Condition="0" Plmn = "247 10" />
+    <EccEntry Ecc="911" Category="0" Condition="0" Plmn = "247 10" />
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn = "247 10" />
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn = "247 10" />
+    <EccEntry Ecc="113" Category="2" Condition="1" Plmn = "247 10" />
+    <EccEntry Ecc="115" Category="8" Condition="1" Plmn = "247 10" />
+    <EccEntry Ecc="911" Category="0" Condition="1" Plmn = "247 10" />
+
     <!-- Add for Virgin operator -->
     <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "206 20" />
 
@@ -748,4 +770,14 @@
     <EccEntry Ecc="118" Category="0" Condition="0" />
     <EccEntry Ecc="119" Category="0" Condition="0" />
     <!-- MOTO CODE END: IKSWR-32720 -->
+
+    <!-- MOTO CODE START: IKSWU-208333 Tigo Guatemala -->
+    <EccEntry Ecc="110" Category="0" Condition="1" Plmn="704 02"/>
+    <EccEntry Ecc="119" Category="0" Condition="3" Plmn="704 02"/>
+    <EccEntry Ecc="120" Category="0" Condition="3" Plmn="704 02"/>
+    <EccEntry Ecc="122" Category="0" Condition="3" Plmn="704 02"/>
+    <EccEntry Ecc="123" Category="0" Condition="3" Plmn="704 02"/>
+    <EccEntry Ecc="125" Category="0" Condition="3" Plmn="704 02"/>
+    <EccEntry Ecc="*911" Category="0" Condition="3" Plmn="704 02"/>
+    <!-- MOTO CODE END: IKSWU-208333 -->
 </EccTable>
