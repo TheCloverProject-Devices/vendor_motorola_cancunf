@@ -14,6 +14,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/system/etc/permissions/moto-telephony.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-telephony.xml \
     vendor/motorola/cancunf/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/motorola/cancunf/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
+    vendor/motorola/cancunf/proprietary/system_ext/etc/sysconfig/com.mediatek.ims.config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.mediatek.ims.config.xml \
     vendor/motorola/cancunf/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
     vendor/motorola/cancunf/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.tlbin \
     vendor/motorola/cancunf/proprietary/vendor/app/mcRegistry/031c0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/031c0000000000000000000000000000.drbin \
