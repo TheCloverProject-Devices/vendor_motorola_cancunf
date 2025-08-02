@@ -1698,6 +1698,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleRISCV \
     MobileFeliCaClient \
     ImsService \
+    MtkGbaService \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
